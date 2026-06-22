@@ -2,7 +2,7 @@
 
 prefix=@PREFIX@
 libdir=@LIBDIR@
-includedir=${prefix}/include
+includedir=${prefix}/headers/
 
 Name: libxdp
 Description: XDP library
