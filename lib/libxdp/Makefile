@@ -75,7 +75,7 @@ $(OBJDIR)/libxdp.so.$(LIBXDP_VERSION): $(SHARED_OBJS)
 		      $^ $(LDFLAGS) $(LDLIBS) -o $@
 
 $(OBJDIR)/libxdp.pc:
-	$(Q)sed -e "s|@PREFIX@|$(PREFIX)|" \
+	$(Q)sed -e "s|@PREFIX@|$(LIBXDP_PREFIX)|" \
 			-e "s|@LIBDIR@|$(LIBDIR)|" \
 			-e "s|@VERSION@|$(TOOLS_VERSION)|" \
 			< libxdp.pc.template > $@
